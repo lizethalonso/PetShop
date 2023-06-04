@@ -6,107 +6,118 @@
   padding: 0;
   box-sizing: border-box;
 }
+ /*************Header*************/
 
-.header-container-top {
+.h-top, .h-bottom, .header1-lista,
+nav, .nav-links {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.h-top {
   background-color: #222222;
   color: #f3f3f3;
   font-weight: 400;
+  padding: 0px 60px 0px 90px ;
 }
 
-.header-lista {
-  list-style: none;
+.header1-lista {
+  flex-grow: 0.03;
 }
 
-.header-container-bottom {
+.h-bottom {
   background-color: #f0a83e;
-
-}
-
-.logo-base {
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 23.44px;
-  color: #ffffff;
+  padding: 20px 46px;
 }
 
 .logo-first {
   color: #3c2313;
 }
 
-.nav-links {
-  list-style: none;
+.logo {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+nav, .nav-links {
   color: #ffffff;
   font-weight: 400;
   font-size: 13px;
+  flex-grow: 0.30;
 }
 
-.baner {
-  text-align: center;
+nav {
+  justify-content: flex-end;
 }
 
-.foto-baner {
-  display: block;
+/*************Main*************/
+
+section.baner {
+  display: flex;
+  background-image: url(../img/bowl-and-pet-daities-on-green-background\ 1.png);
+  background-color: rgb(0, 255, 191);
+  background-size:cover;
+  height: 480px;
   width: 100%;
+  align-items: center;
+  justify-content:flex-end;
+}
+
+/*.foto-baner {
+  display: flex;
+  width: 100%;
+}*/
+
+.textos-container {
+  display: flex;
+  height:22vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 15px;
+  margin-top: 100px;
 }
 
 .texto1-baner {
-  color: #3C2313;
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 35px;
-  text-align: center;
-}
-
-.contenedor-texto1-baner {
   display: flex;
-  border-radius: 5px;
-  background: #FFFFFF;
-  position: absolute;
-  align-items: center;
-  justify-content: center;
   width: 365px;
   height: 54px;
-  left: 890px;
-  top: 345px;
+  font-size: 30px;
+  color: #3C2313;
+  border-radius: 5px;
+  background: #FFFFFF;
+  align-items: center;
+  justify-content: center; 
 }
 
 .texto2-baner {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
-  text-align: center;
-  color: #3C2313;
-  position: absolute;
-  width: 365px;
-  height: 54px;
-  left: 890px;
-  top: 420px;
-}
-
-.contenedor-texto3-baner {
-  display: flex;
-  border-radius: 5px;
-  background: #F0A83E;;
-  position: absolute;
-  align-items: center;
-  justify-content: center;
-  width: 141px;
-  height: 49px;
-  left: 1005px;
-  top: 460px;
+  color: #3C2313; 
 }
 
 .texto3-baner {
+  display: flex;
+  width: 141px;
+  height: 49px;
   color: #FFFFFF;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
-  text-align: center;
+  border-radius: 5px;
+  background: #F0A83E;;
+  align-items: center;
+  justify-content: center;
 }
 
+/*************Main*************/
+
 .footer-top {
-  background-color: #3C2313;;
+  display: flex;
+  background-color: #3C2313;
+  justify-content: space-between;
+  padding: 27px 65px;
+}
+
+div.ubicanos {
+ display: ;
 }
 
 .titulo-ubicanos {
@@ -115,10 +126,27 @@
   font-weight: 700;
 }
 
-.ubicanos {
+.datos-ubicanos {
   font-weight: 700;
   font-size: 10px;
   color: #8A8787;
+}
+
+div.logo-footer {
+  display: flex;
+  align-items: center;
+}
+
+.logo-footer {
+  color: #F0A83E;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.logo-word-front {
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: 700;
 }
 
 .derechos-reservados {
@@ -127,12 +155,4 @@
   color: #ffffff;
   text-align: center;
   background-color: #222222;
-}
-
-.logo-first-footer {
-  color: #FFFFFF;
-}
-
-.logo-base-footer {
-  color: #F0A83E;
 }
