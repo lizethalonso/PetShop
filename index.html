@@ -42,37 +42,75 @@
                     <p class="texto3-baner">COMEDEROS</p>
                 </div>
             </section>
-            <section>
-                <img src="./img/pawprint2.png" alt="Huellita">
-                <h2>Productos destacados</h2>
-                <p>Comederos - Accesorios - Comida</p>
-                <img src="./img/churrasquito.png" alt="Juguete churrasquito">
-                <p>Juguete Churrasquito</p>
-                <p>$150</p>
-                <br>
-                <img src="./img/comedero.png" alt="Comedero perro">
-                <p>Comedero para perro</p>
-                <p>$250</p>
-                <br>
-                <img src="./img/Huesito.png" alt="Juguete huesitos">
-                <p>Juguete huesito</p>
-                <p>$650</p>
+            <section class="products">
+                <div class="texto-destacados">
+                    <img src="./img/pawprint2.png" alt="Huellita"><br>
+                    <h2 class="h2-destacados">Productos destacados</h2><br>
+                    <p class="p-destacados">Comederos - Accesorios - Comida</p>
+                </div>
+                <div class="productos-destacados">
+                    <div class="pto-precio">
+                        <img src="./img/churrasquito.png" alt="Juguete churrasquito">
+                        <p class="nombre-producto">Juguete Churrasquito</p>
+                        <p class="precio">$150</p>
+                    </div>
+                    <div class="pto-precio">
+                        <img src="./img/comedero.png" alt="Comedero perro">
+                        <p class="nombre-producto">Comedero para perro</p>
+                        <p class="precio">$250</p>
+                    </div>
+                    <div class="pto-precio">
+                        <img src="./img/Huesito.png" alt="Juguete huesitos">
+                        <p class="nombre-producto">Juguete huesito</p>
+                        <p class="precio">$650</p>
+                    </div>
+                </div>              
+            </section>
+            <section class="form">
+                <h2>Contáctanos</h2>
+                <div class="formulario">
+                    <form action="">
+                        <input type="text" id="nombre">
+                        <input type="text" id="email">
+                        <input type="text" id="telefono">
+                        <div class="buttons">
+                            <input type="submit" name="reset" value="Resetear">
+                            <input type="submit" name="send" value="Enviar">
+                        </div>
+                    </form>
+                </div>
+                
             </section>
         </main>
         
         <footer>
             <section class="footer-top">
                 <div class="ubicanos">
-                    <img src="./img/IconoUbi.png" alt="Ubicación">
-                    <p class="titulo-ubicanos">Localidad</p>
-                    <p class="datos-ubicanos">Calle - Provincia</p>
-                    <img src="./img/IconoTel.png" alt="Tel">
-                    <p class="titulo-ubicanos">Teléfono</p>
-                    <p class="datos-ubicanos">Número de teléfono</p>
-                    <img src="./img/IconoCont.png" alt="Correo">
-                    <p class="titulo-ubicanos">Correo electrónico</p>
-                    <p class="datos-ubicanos">Dirección de correo</p>
+                    <div class="location">
+                        <img src="./img/IconoUbi.png" alt="Ubicación">
+                        <div class="sub-location">
+                            <p class="titulo-ubicanos">Localidad</p>
+                            <p class="datos-ubicanos">Calle - Provincia</p>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="location">
+                        <img src="./img/IconoTel.png" alt="Tel">
+                        <div class="sub-location">
+                            <p class="titulo-ubicanos">Teléfono</p>
+                            <p class="datos-ubicanos">Número de teléfono</p>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="location">
+                        <img src="./img/IconoCont.png" alt="Correo">
+                        <div class="sub-location">
+                            <p class="titulo-ubicanos">Correo electrónico</p>
+                            <p class="datos-ubicanos">Dirección de correo</p>
+                        </div>
+                    </div>
                 </div>
+                
                 <div class="logo-footer">
                     <p class="logo-footer">
                         <img src="./img/Cat.png" alt="gato" />
