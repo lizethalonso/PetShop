@@ -122,6 +122,7 @@ section.products {
 
 div.productos-destacados {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   padding: 40px 150px 75px;
 }
@@ -131,6 +132,7 @@ div.pto-precio {
   text-align: center;
   font-weight: 500;
   font-size: 15px;
+  margin: 20px 0;
 }
 
 p.nombre-producto {
@@ -157,7 +159,11 @@ section.form >h2 {
   margin-bottom: 20px;
 }
 
-form {
+div.formulario {
+  width: 100vw;
+}
+
+div.formulario>form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -166,12 +172,19 @@ form {
 input {
   background: #3C2313;
   border-radius: 15px;
-  color: #AB9C9C;
-  padding: 10px;
+  color: #FFFFFF;
+  padding: 14px 15px;
   border-style: hidden;
-  margin-bottom: 10px;
-  width: 30vw;
+  width: 25%;
   font-size: 9px;
+}
+
+form>input {
+  margin-bottom: 10px;
+}
+
+form>input::placeholder {
+  color:#FFFFFF;
 }
 
 .buttons {
@@ -180,18 +193,19 @@ input {
   padding: 31px 0px 75px;
 } 
 
+div.buttons>input {
+  width: 80px;
+  margin: 0 2px;
+  font-size: 16px;
+  padding: 7px;
+}
+
 input[name="reset"] {
   background-color: #8A8787;
-  color: #FFFFFF;
-  width: 8vw;
-  margin-right: 2px;
 }
 
 input[name="send"] {
   background-color: #F0A83E;
-  color: #FFFFFF;
-  width: 8vw;
-  margin-left: 2px;
 }
 
 /*Sección de subscripción*/
@@ -201,34 +215,34 @@ section.subscription {
   background-color: #F0A83E;
   justify-content: space-between;
   align-items: center;
-  height: 9vh;
+  padding: 10px 30px;
 }
 
 .subs{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   font-size: 20px;
   color:#FFFFFF;
   font-weight: 700px;
-  flex-grow: 0.10;
-  padding-left: 11px;
+  flex-grow: 0.02;
 }
 
 .subs2{
   display: flex;
-  flex-grow: 0.20;
-  justify-content: space-evenly;
+  justify-content:space-evenly;
+  flex-grow: 0.3;
+  margin-right: 8px;
 }
 
-section.subscription>div>input[type="text"] {
+section.subscription input[type="text"] {
   background-color: #FFFFFF;
-  margin: 0;
-  height: 6vh;
+  flex-grow: 1;
 }
 
-section.subscription>div>input[type="submit"] {
-  width: 26%;
-  margin: 0;
+section.subscription input[type="submit"] {
+  width: 80px;
+  margin-left: 6px;
+  font-weight: 700;
 }
 
 
@@ -330,6 +344,7 @@ div.logo-footer {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: nowrap;
   }
   
   div.pto-precio {
@@ -343,39 +358,47 @@ div.logo-footer {
   input {
     width: 75vw;
   }
+
+  form>input::placeholder {
+    color: #AB9C9C;
+    font-weight: 400;
+  }
    
-  input[name="reset"], input[name="send"] {
+  div.buttons>input {
     width: 48vw;
   }
-
+ 
   section.subscription {
-    align-items: center;
     flex-direction: column;
-    justify-content: space-evenly;
-    padding: 10px;
+    align-items: flex-start;
+    padding: 0;
   }
   
   .subs{
-
-    justify-content: space-between;
-    align-items: left;
     font-size: 18px;
+    padding: 15px 10px 7px;
+  }
+  
+  .subs>p {
+    margin-left: 5px;
   }
   
   .subs2{
-    justify-content: space-evenly;
+    margin: 7px 10px 15px
   }
-  
+
   section.subscription>div>input[type="text"] {
     background-color: #FFFFFF;
-    height: 5vh;
+    height: 6vh;
+    width: 60vw;
   }
   
   section.subscription>div>input[type="submit"] {
-    height: 5vh;
+    width: 25vw;
+    margin-left: 5px;
+    padding: 0;
   }
   
-   
   .footer-top {
     padding-top: 11px;
     flex-direction: column-reverse;
