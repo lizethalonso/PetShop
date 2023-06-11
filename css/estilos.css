@@ -19,7 +19,7 @@ nav, .nav-links {
   background-color: #222222;
   color: #f3f3f3;
   font-weight: 400;
-  padding: 0px 60px 0px 90px ;
+  padding: 2px 60px 2px 90px ;
 }
 
 .header1-lista {
@@ -52,6 +52,11 @@ nav {
   justify-content: flex-end;
 }
 
+.fa-bars {
+  color: white;
+  display:none;
+}
+
 /**************************Main**************************/
 
 section.baner {
@@ -60,19 +65,12 @@ section.baner {
   background-color: rgb(0, 255, 191);
   background-size:cover;
   height: 480px;
-  width: 100%;
   align-items: center;
   justify-content:flex-end;
 }
 
-/*.foto-baner {
-  display: flex;
-  width: 100%;
-}*/
-
 .textos-container {
   display: flex;
-  height:22vh;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
@@ -81,15 +79,11 @@ section.baner {
 }
 
 .texto1-baner {
-  display: flex;
-  width: 365px;
-  height: 54px;
+  padding: 10px 12px ;
   font-size: 30px;
   color: #3C2313;
   border-radius: 5px;
   background: #FFFFFF;
-  align-items: center;
-  justify-content: center; 
 }
 
 .texto2-baner {
@@ -97,14 +91,10 @@ section.baner {
 }
 
 .texto3-baner {
-  display: flex;
-  width: 141px;
-  height: 49px;
+  padding: 15px 22px;
   color: #FFFFFF;
   border-radius: 5px;
   background: #F0A83E;;
-  align-items: center;
-  justify-content: center;
 }
 
 /*Sección de productos destacados*/
@@ -130,7 +120,7 @@ section.products {
   color: #666666;
 }
 
-.productos-destacados {
+div.productos-destacados {
   display: flex;
   justify-content: space-evenly;
   padding: 40px 150px 75px;
@@ -170,37 +160,77 @@ section.form >h2 {
 form {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 input {
   background: #3C2313;
   border-radius: 15px;
-  color: #ffffff;
-  padding: 8px;
+  color: #AB9C9C;
+  padding: 10px;
   border-style: hidden;
   margin-bottom: 10px;
+  width: 30vw;
+  font-size: 9px;
 }
 
 .buttons {
   display: flex;
-  justify-content: space-evenly;
-  padding: 31px 65px 75px;
+  justify-content: center;
+  padding: 31px 0px 75px;
 } 
 
 input[name="reset"] {
   background-color: #8A8787;
-  width: 100px;
+  color: #FFFFFF;
+  width: 8vw;
   margin-right: 2px;
 }
 
 input[name="send"] {
   background-color: #F0A83E;
-  width: 100px;
+  color: #FFFFFF;
+  width: 8vw;
   margin-left: 2px;
 }
 
-
 /*Sección de subscripción*/
+
+section.subscription {
+  display: flex;
+  background-color: #F0A83E;
+  justify-content: space-between;
+  align-items: center;
+  height: 9vh;
+}
+
+.subs{
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 20px;
+  color:#FFFFFF;
+  font-weight: 700px;
+  flex-grow: 0.10;
+  padding-left: 11px;
+}
+
+.subs2{
+  display: flex;
+  flex-grow: 0.20;
+  justify-content: space-evenly;
+}
+
+section.subscription>div>input[type="text"] {
+  background-color: #FFFFFF;
+  margin: 0;
+  height: 6vh;
+}
+
+section.subscription>div>input[type="submit"] {
+  width: 26%;
+  margin: 0;
+}
+
 
 /**************************Footer**************************/
 
@@ -258,4 +288,101 @@ div.logo-footer {
   color: #ffffff;
   text-align: center;
   background-color: #222222;
+}
+
+/**************************Responsive**************************/
+
+@media screen and (max-width: 480px) {
+  header section.h-top, section>nav {
+    display: none;
+  }
+
+  .fa-bars {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 20px;
+  }
+
+  .h-bottom {
+    padding: 20px 30px;
+  }
+
+  section.baner {
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .textos-container {
+    margin: 0;
+    padding-right: 0;
+    align-items: flex-end;
+  }
+  
+  .texto1-baner {
+     width: 90vw;
+  }
+  
+  .texto2-baner {
+    margin: 15px 0;
+  }
+
+  div.productos-destacados {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  div.pto-precio {
+    margin: 20px 0;
+  }
+
+  section.form>h2 {
+    font-size: 40px;
+  }
+
+  input {
+    width: 75vw;
+  }
+   
+  input[name="reset"], input[name="send"] {
+    width: 48vw;
+  }
+
+  section.subscription {
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 10px;
+  }
+  
+  .subs{
+
+    justify-content: space-between;
+    align-items: left;
+    font-size: 18px;
+  }
+  
+  .subs2{
+    justify-content: space-evenly;
+  }
+  
+  section.subscription>div>input[type="text"] {
+    background-color: #FFFFFF;
+    height: 5vh;
+  }
+  
+  section.subscription>div>input[type="submit"] {
+    height: 5vh;
+  }
+  
+   
+  .footer-top {
+    padding-top: 11px;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .logo-footer {
+    padding-bottom: 8px;
+  }
 }

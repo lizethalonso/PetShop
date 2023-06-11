@@ -4,6 +4,9 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="./css/estilos.css"/>
         <title>PetShop</title>
     </head>
@@ -30,6 +33,7 @@
                         <li class="header-links"><img src="./img/pawprint 1.png" alt="huellita"/><span>Contactanos</span></li>
                     </ul>
                 </nav>
+                <i class="fa-solid fa-bars"></i>
             </section>
         </header>
         <main>
@@ -70,19 +74,27 @@
                 <h2>Contáctanos</h2>
                 <div class="formulario">
                     <form action="">
-                        <input type="text" id="nombre">
-                        <input type="text" id="email">
-                        <input type="text" id="telefono">
+                        <input type="text" id="nombre" placeholder="Nombre y apellido">
+                        <input type="text" id="email" placeholder="Ingresa tu correo electrónico">
+                        <input type="text" id="telefono" placeholder="Teléfono">
                         <div class="buttons">
                             <input type="submit" name="reset" value="Resetear">
                             <input type="submit" name="send" value="Enviar">
                         </div>
                     </form>
                 </div>
-                
+            </section>
+            <section class="subscription">
+                <div class="subs">
+                    <img src="./img/correo.png" alt="Imágen de correo">
+                    <p>Suscríbete para más novedades</p>
+                </div>
+                <div class="subs2">
+                    <input type="text" placeholder="Ingresa tu correo electrónico"> 
+                    <input type="submit" name="subscribe" value="Suscribirme">
+                </div>
             </section>
         </main>
-        
         <footer>
             <section class="footer-top">
                 <div class="ubicanos">
@@ -110,7 +122,6 @@
                         </div>
                     </div>
                 </div>
-                
                 <div class="logo-footer">
                     <p class="logo-footer">
                         <img src="./img/Cat.png" alt="gato" />
